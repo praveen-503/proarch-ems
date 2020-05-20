@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Proarch.Ems.Core.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Proarch.Ems.Core.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Proarch.Ems.Core.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Proarch.Ems.Core.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Proarch.Ems.Core.Domain/Proarch.Ems.Core.Domain.csproj",
+      "msbuildProject": "../Proarch.Ems.Core.Domain/Proarch.Ems.Core.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Proarch.Ems.Core.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\praveenb\\.nuget\\packages\\": {},
@@ -14,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj",
+      "projectUniqueName": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj",
       "projectName": "Proarch.Ems.Core.Application",
-      "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj",
+      "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj",
       "packagesPath": "C:\\Users\\praveenb\\.nuget\\packages\\",
-      "outputPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\obj\\",
+      "outputPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -36,7 +55,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+              "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

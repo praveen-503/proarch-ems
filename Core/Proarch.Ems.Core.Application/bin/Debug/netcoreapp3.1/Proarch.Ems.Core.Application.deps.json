@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Proarch.Ems.Core.Application/1.0.0": {
+        "dependencies": {
+          "Proarch.Ems.Core.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Proarch.Ems.Core.Application.dll": {}
+        }
+      },
+      "Proarch.Ems.Core.Domain/1.0.0": {
+        "runtime": {
+          "Proarch.Ems.Core.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Proarch.Ems.Core.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Proarch.Ems.Core.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
