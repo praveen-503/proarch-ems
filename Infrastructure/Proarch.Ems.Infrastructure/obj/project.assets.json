@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Proarch.Ems.Core.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Proarch.Ems.Core.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Proarch.Ems.Core.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Proarch.Ems.Core.Application.dll": {}
+        }
+      },
+      "Proarch.Ems.Core.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Proarch.Ems.Core.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Proarch.Ems.Core.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Proarch.Ems.Core.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Proarch.Ems.Core.Application/Proarch.Ems.Core.Application.csproj",
+      "msbuildProject": "../../Core/Proarch.Ems.Core.Application/Proarch.Ems.Core.Application.csproj"
+    },
+    "Proarch.Ems.Core.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Proarch.Ems.Core.Domain/Proarch.Ems.Core.Domain.csproj",
+      "msbuildProject": "../../Core/Proarch.Ems.Core.Domain/Proarch.Ems.Core.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Proarch.Ems.Core.Application >= 1.0.0",
+      "Proarch.Ems.Core.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\praveenb\\.nuget\\packages\\": {},
@@ -36,7 +74,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
+              "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
+            },
+            "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+              "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
