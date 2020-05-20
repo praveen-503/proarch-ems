@@ -1,0 +1,11 @@
+D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.csprojAssemblyReference.cache
+D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.AssemblyInfoInputs.cache
+D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.AssemblyInfo.cs
+D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Application\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.deps.json
+D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Application\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.dll
+D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Application\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.pdb
+D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Application\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.dll
+D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Application\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.pdb
+D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.csproj.CopyComplete
+D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.dll
+D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Application\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.pdb

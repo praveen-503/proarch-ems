@@ -6,10 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Proarch.Ems.Infrastructure.Data.Common;
+using Proarch.Ems.Presentation.API.Extension;
 
 namespace Proarch.Ems.Presentation.API
 {
@@ -26,6 +29,14 @@ namespace Proarch.Ems.Presentation.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            //services.AddApiVersioning();
+            services.RegisterDependencies();
+            services.AddDbContext<EmsDbContext>(options =>
+            {
+                options.UseMySql(Configuration.GetConnectionString("EmsDbContext"));
+            });
+           // services.AddAuthentication("BasicAuthentication")
+            //    .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,11 +46,21 @@ namespace Proarch.Ems.Presentation.API
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.EnsureSeeds();
+            app.HandleException();
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
+            //app.UseSwagger();
+
+            //app.UseSwaggerUI(c =>
+            //{
+            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", API_NAME);
+            //    c.RoutePrefix = string.Empty;
+            //});
+
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
