@@ -20,7 +20,7 @@ namespace Proarch.Ems.Infrastructure.Data.Common
             _userService = userService;
         }
 
-        public DbSet<ClientModel> ClientModel { get; set; }
+        public DbSet<ClientModel> Clients { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using Proarch.Ems.Core.Application.Usecases;
 using Proarch.Ems.Core.Domain.Models;
-using Proarch.Ems.Infrastructure.Data.Common;
 
 namespace Proarch.Ems.Presentation.API.Controllers.Client
 {
@@ -14,34 +9,52 @@ namespace Proarch.Ems.Presentation.API.Controllers.Client
     [ApiController]
     public class ClientController : ControllerBase
     {
-        private readonly EmsDbContext _context;
+        private readonly IClientUsecase _clientUsecase;
 
-        public ClientController(EmsDbContext context)
+        public ClientController(IClientUsecase clientUsecase)
         {
-            _context = context;
+            _clientUsecase = clientUsecase;
         }
 
         // GET: api/Client
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ClientModel>>> GetClientModel()
+        public async Task<ActionResult> GetAllClientsAsync()
         {
-            return await _context.ClientModel.ToListAsync();
+            var clients = await _clientUsecase.GetAllClientsAsync().ConfigureAwait(false);
+            if (clients == null)
+            {
+                return NotFound();
+            }
+            return Ok(clients);
         }
 
         // GET: api/Client/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ClientModel>> GetClientModel(int id)
+        public async Task<ActionResult> GetClientByIdAsync(int id)
         {
-            var clientModel = await _context.ClientModel.FindAsync(id);
+            var clientModel = await _clientUsecase.GetClientByIdAsync(id).ConfigureAwait(true);
 
             if (clientModel == null)
             {
                 return NotFound();
             }
 
-            return clientModel;
+            return Ok(clientModel);
         }
 
+        // POST: api/Client
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
+        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        [HttpPost]
+        public async Task<ActionResult> PostClientAs(ClientModel clientModel)
+        {
+            var clientId =await _clientUsecase.AddClientAsync(clientModel).ConfigureAwait(true);
+            if(clientId == 0)
+            {
+                return BadRequest("client is already existed with this Name or Id");
+            }
+            return Created("created new client", new { url = "https//localhost:44399/client/" + clientId });
+        }
         // PUT: api/Client/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -52,59 +65,26 @@ namespace Proarch.Ems.Presentation.API.Controllers.Client
             {
                 return BadRequest();
             }
-
-            _context.Entry(clientModel).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ClientModelExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Client
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPost]
-        public async Task<ActionResult<ClientModel>> PostClientModel(ClientModel clientModel)
-        {
-            _context.ClientModel.Add(clientModel);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetClientModel", new { id = clientModel.Id }, clientModel);
-        }
-
-        // DELETE: api/Client/5
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<ClientModel>> DeleteClientModel(int id)
-        {
-            var clientModel = await _context.ClientModel.FindAsync(id);
-            if (clientModel == null)
+            var client = await _clientUsecase.UpdateClientAsync(clientModel).ConfigureAwait(true);
+            if(client == null)
             {
                 return NotFound();
             }
 
-            _context.ClientModel.Remove(clientModel);
-            await _context.SaveChangesAsync();
-
-            return clientModel;
+            // return NoContent();
+            return Ok(client);
         }
-
-        private bool ClientModelExists(int id)
+        // DELETE: api/Client/5
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<ClientModel>> DeleteClientModel(int id)
         {
-            return _context.ClientModel.Any(e => e.Id == id);
+            var clientId = await _clientUsecase.DeleteClientsAsync(id).ConfigureAwait(true);
+            if (clientId == 0)
+            {
+                return NotFound();
+            }
+           
+            return Ok("Client Deleted Successfully with client id:"+clientId);
         }
     }
 }

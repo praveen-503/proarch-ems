@@ -4,12 +4,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Proarch.Ems.Infrastructure.Data.Migrations
 {
-    public partial class US302Client : Migration
+    public partial class Us802Clients : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "ClientModel",
+                name: "Clients",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -24,14 +24,14 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ClientModel", x => x.Id);
+                    table.PrimaryKey("PK_Clients", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ClientModel");
+                name: "Clients");
         }
     }
 }

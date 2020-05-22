@@ -9,8 +9,8 @@ using Proarch.Ems.Infrastructure.Data.Common;
 namespace Proarch.Ems.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(EmsDbContext))]
-    [Migration("20200520220442_US-302 Client")]
-    partial class US302Client
+    [Migration("20200521143328_Us-802 -Clients")]
+    partial class Us802Clients
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -46,14 +46,9 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("longtext CHARACTER SET utf8");
 
-                    b.Property<DateTime?>("RowVersion")
-                        .IsConcurrencyToken()
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("timestamp(6)");
-
                     b.HasKey("Id");
 
-                    b.ToTable("ClientModel");
+                    b.ToTable("Clients");
                 });
 #pragma warning restore 612, 618
         }

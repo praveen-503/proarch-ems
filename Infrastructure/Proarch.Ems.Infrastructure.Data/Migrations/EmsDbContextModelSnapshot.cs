@@ -44,14 +44,9 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("longtext CHARACTER SET utf8");
 
-                    b.Property<DateTime?>("RowVersion")
-                        .IsConcurrencyToken()
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("timestamp(6)");
-
                     b.HasKey("Id");
 
-                    b.ToTable("ClientModel");
+                    b.ToTable("Clients");
                 });
 #pragma warning restore 612, 618
         }
