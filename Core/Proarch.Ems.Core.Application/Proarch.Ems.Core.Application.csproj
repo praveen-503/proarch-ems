@@ -5,11 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\" />
-    <Folder Include="Usecases\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Proarch.Ems.Core.Domain\Proarch.Ems.Core.Domain.csproj" />
   </ItemGroup>
 

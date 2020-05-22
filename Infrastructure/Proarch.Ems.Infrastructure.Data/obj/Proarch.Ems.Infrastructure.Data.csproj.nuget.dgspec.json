@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ems-practice-project\\backend\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj": {}
+    "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj": {}
   },
   "projects": {
-    "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
+    "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj",
+        "projectUniqueName": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj",
         "projectName": "Proarch.Ems.Core.Application",
-        "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj",
+        "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj",
         "packagesPath": "C:\\Users\\praveenb\\.nuget\\packages\\",
-        "outputPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\obj\\",
+        "outputPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
+              "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+    "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
+        "projectUniqueName": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
         "projectName": "Proarch.Ems.Core.Domain",
-        "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
+        "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
         "packagesPath": "C:\\Users\\praveenb\\.nuget\\packages\\",
-        "outputPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\obj\\",
+        "outputPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -118,14 +118,14 @@
         }
       }
     },
-    "D:\\ems-practice-project\\backend\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj": {
+    "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj",
+        "projectUniqueName": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj",
         "projectName": "Proarch.Ems.Infrastructure.Data",
-        "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj",
+        "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj",
         "packagesPath": "C:\\Users\\praveenb\\.nuget\\packages\\",
-        "outputPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\obj\\",
+        "outputPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -144,14 +144,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
+              "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
+                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
               },
-              "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
+              "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
               },
-              "D:\\ems-practice-project\\backend\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj"
+              "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj": {
+                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj"
               }
             }
           }
@@ -180,6 +180,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.4, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql.Design": {
+              "target": "Package",
+              "version": "[1.1.2, )"
             }
           },
           "imports": [
@@ -201,14 +205,14 @@
         }
       }
     },
-    "D:\\ems-practice-project\\backend\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj": {
+    "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj",
+        "projectUniqueName": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj",
         "projectName": "Proarch.Ems.Infrastructure",
-        "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj",
+        "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\praveenb\\.nuget\\packages\\",
-        "outputPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Infrastructure\\Proarch.Ems.Infrastructure\\obj\\",
+        "outputPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -227,11 +231,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
+              "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
+                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
               },
-              "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\Proarch.Ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
+              "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
               }
             }
           }

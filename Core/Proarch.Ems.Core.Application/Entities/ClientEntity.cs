@@ -23,7 +23,6 @@ namespace Proarch.Ems.Core.Application.Entities
                 Name = model.Name,
                 Id = model.Id,
                 IsExisted = model.IsExisted,
-                RowVersion = model.RowVersion
             };
         }
     }

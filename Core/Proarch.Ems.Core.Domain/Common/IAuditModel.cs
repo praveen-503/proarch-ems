@@ -7,13 +7,13 @@ namespace Proarch.Ems.Core.Domain.Common
     public interface ICreated
     {
         string CreatedBy { get; set; }
-        DateTimeOffset CreatedAt { get; set; }
+        DateTime CreatedAt { get; set; }
     }
 
     public interface IModified
     {
         string LastModifiedBy { get; set; }
-        DateTimeOffset? LastModifiedAt { get; set; }
+        DateTime? LastModifiedAt { get; set; }
     }
 
     public interface ISoftDelete

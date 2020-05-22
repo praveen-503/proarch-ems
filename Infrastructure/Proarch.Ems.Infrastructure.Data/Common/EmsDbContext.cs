@@ -20,7 +20,7 @@ namespace Proarch.Ems.Infrastructure.Data.Common
             _userService = userService;
         }
 
-        public DbSet<ClientModel> ClientModel { get; set; }
+        public DbSet<ClientModel> Clients { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -51,7 +51,7 @@ namespace Proarch.Ems.Infrastructure.Data.Common
             {
                 if (entry.Entity is ICreated entity)
                 {
-                    entity.CreatedAt = DateTimeOffset.Now;
+                    entity.CreatedAt = DateTime.Now;
                     entity.CreatedBy = _userService.User;
                 }
             }
@@ -60,7 +60,7 @@ namespace Proarch.Ems.Infrastructure.Data.Common
             {
                 if (entry.Entity is IModified entity)
                 {
-                    entity.LastModifiedAt = DateTimeOffset.Now;
+                    entity.LastModifiedAt = DateTime.Now;
                     entity.LastModifiedBy = _userService.User;
                 }
 
