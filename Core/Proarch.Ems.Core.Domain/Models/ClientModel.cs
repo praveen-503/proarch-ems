@@ -14,7 +14,7 @@ namespace Proarch.Ems.Core.Domain.Models
         public string Name { get; set; }
 
         public bool IsExisted { get; set; }
-
+        public ICollection<ProjectModel> Projects { get; set; }
         public bool IsValid()
         {
             return string.IsNullOrEmpty(Name) == false;

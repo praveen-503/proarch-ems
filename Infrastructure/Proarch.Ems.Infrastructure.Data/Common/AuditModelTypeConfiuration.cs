@@ -15,7 +15,8 @@ namespace Proarch.Ems.Infrastructure.Data.Common
     {
         public void Configure(EntityTypeBuilder<TModel> builder)
         {
-            builder.HasKey(e => e.Id);
+            builder.HasKey(x => x.Id);
+            builder.Property(e => e.Id).ValueGeneratedOnAdd();
             builder.Property(p => p.CreatedBy);
             builder.Property(p => p.CreatedAt).HasColumnType("TIMESTAMP"); 
             builder.Property(p => p.LastModifiedAt).HasColumnType("TIMESTAMP");

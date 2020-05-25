@@ -29,13 +29,15 @@ namespace Proarch.Ems.Presentation.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddApiVersioning();
             services.RegisterDependencies();
+            //services.AddApiVersioning();
             services.AddDbContext<EmsDbContext>(options =>
             {
                 options.UseMySql(Configuration.GetConnectionString("EmsDbContext"));
             });
-           // services.AddAuthentication("BasicAuthentication")
+         
+
+            // services.AddAuthentication("BasicAuthentication")
             //    .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
         }
 

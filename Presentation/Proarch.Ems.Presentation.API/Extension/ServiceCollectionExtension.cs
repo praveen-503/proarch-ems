@@ -27,7 +27,6 @@ namespace Proarch.Ems.Presentation.API.Extension
             {
                 services.AddScoped(type.GetInterface($"I{type.Name}"), type);
             }
-
             services.AddScoped<IUserService, UserService>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }

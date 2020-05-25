@@ -12,10 +12,15 @@ namespace Proarch.Ems.Infrastructure.Data.Configuration
     {
         protected override void ConfigureEntity(EntityTypeBuilder<ClientModel> builder)
         {
+            builder.ToTable("Clients");
             builder.Property(p => p.Name);
             builder.Property(p => p.IsExisted);
             builder.HasQueryFilter(x => !x.IsDelete);
-            //builder.ToTable("TodoItem");
+            builder
+                .HasMany<ProjectModel>(g => g.Projects)
+                .WithOne(s => s.Client)
+                .HasForeignKey(s => s.ClientId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
