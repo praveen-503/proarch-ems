@@ -93,7 +93,7 @@ namespace Proarch.Ems.Presentation.API.Controllers.Employee
             {
                 return NotFound();
             }
-            return Ok(); ;
+            return Ok(); 
         }
     }
 }

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Proarch.Ems.Core.Application.Usecases;
@@ -40,14 +37,14 @@ namespace Proarch.Ems.Presentation.API.Controllers.Project
         [HttpGet("{id}")]
         public async Task<ActionResult<ProjectModel>> GetProjectModel(int id)
         {
-            var projectModel = await _context.Projects.FindAsync(id);
+            var project = await _projectUsecase.GetProjectByIdAsync(id).ConfigureAwait(true);
 
-            if (projectModel == null)
+            if (project == null)
             {
                 return NotFound();
             }
 
-            return projectModel;
+            return project;
         }
 
         // PUT: api/Project/5
@@ -60,7 +57,8 @@ namespace Proarch.Ems.Presentation.API.Controllers.Project
             {
                 return BadRequest();
             }
-
+            var isProjectUpdated = await _projectUsecase.UpdateProjectAsync(projectModel).ConfigureAwait(true);
+            
             _context.Entry(projectModel).State = EntityState.Modified;
 
             try
@@ -88,26 +86,24 @@ namespace Proarch.Ems.Presentation.API.Controllers.Project
         [HttpPost]
         public async Task<ActionResult<ProjectModel>> PostProjectModel(ProjectModel projectModel)
         {
-            _context.Projects.Add(projectModel);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetProjectModel", new { id = projectModel.Id }, projectModel);
+            var projectID = await _projectUsecase.CreateProjectAsync(projectModel).ConfigureAwait(true);
+            if (projectID == 0)
+            {
+                return BadRequest("Project is already existed with Id or Name");
+            }
+            return CreatedAtAction("GetProjectModel", new { id = projectID }, projectModel);
         }
 
         // DELETE: api/Project/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<ProjectModel>> DeleteProjectModel(int id)
         {
-            var projectModel = await _context.Projects.FindAsync(id);
-            if (projectModel == null)
+            var isDeleted = await _projectUsecase.DeleteProjectAsync(id).ConfigureAwait(true);
+            if (!isDeleted)
             {
                 return NotFound();
             }
-
-            _context.Projects.Remove(projectModel);
-            await _context.SaveChangesAsync();
-
-            return projectModel;
+            return Ok();
         }
 
         private bool ProjectModelExists(int id)
