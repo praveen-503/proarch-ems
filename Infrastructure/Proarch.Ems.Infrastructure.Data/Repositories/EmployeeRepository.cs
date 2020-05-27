@@ -3,14 +3,12 @@ using Proarch.Ems.Core.Application.Common;
 using Proarch.Ems.Core.Application.Repositories;
 using Proarch.Ems.Core.Domain.Models;
 using Proarch.Ems.Infrastructure.Data.Common;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Proarch.Ems.Infrastructure.Data.Repositories
 {
-    internal class EmployeeRepository : ExceptionHelper,IEmployeeRepository
+    internal class EmployeeRepository : ExceptionHelper, IEmployeeRepository
     {
         private readonly EmsDbContext _context;
 
@@ -48,7 +46,7 @@ namespace Proarch.Ems.Infrastructure.Data.Repositories
 
         async Task<List<EmployeeModel>> IEmployeeRepository.GetEmployees()
         {
-           return  await _context.Employees.ToListAsync().ConfigureAwait(false);
+            return await _context.Employees.ToListAsync().ConfigureAwait(false);
         }
 
         async Task<bool> IEmployeeRepository.UpdateEmployeeAsync(EmployeeModel employee)
@@ -74,10 +72,10 @@ namespace Proarch.Ems.Infrastructure.Data.Repositories
             return true;
         }
 
-         private bool EmployeeModelExists(int Id)
+        private bool EmployeeModelExists(int Id)
         {
             var employee = _context.Employees.SingleOrDefaultAsync(e => e.Id == Id && e.IsDelete == false);
-            if(employee == null)
+            if (employee == null)
             {
                 return false;
             }

@@ -6,3 +6,10 @@ D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Domain\obj\Deb
 D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Domain\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.AssemblyInfo.cs
 D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Domain\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.dll
 D:\ems-practice-project\backend\Proarch.Ems\Core\Proarch.Ems.Core.Domain\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.pdb
+D:\ems-practice-project\backend\proarch-ems\Core\Proarch.Ems.Core.Domain\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.deps.json
+D:\ems-practice-project\backend\proarch-ems\Core\Proarch.Ems.Core.Domain\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.dll
+D:\ems-practice-project\backend\proarch-ems\Core\Proarch.Ems.Core.Domain\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.pdb
+D:\ems-practice-project\backend\proarch-ems\Core\Proarch.Ems.Core.Domain\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.AssemblyInfoInputs.cache
+D:\ems-practice-project\backend\proarch-ems\Core\Proarch.Ems.Core.Domain\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.AssemblyInfo.cs
+D:\ems-practice-project\backend\proarch-ems\Core\Proarch.Ems.Core.Domain\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.dll
+D:\ems-practice-project\backend\proarch-ems\Core\Proarch.Ems.Core.Domain\obj\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.pdb

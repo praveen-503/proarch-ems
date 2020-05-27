@@ -2,9 +2,6 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Proarch.Ems.Core.Domain.Models;
 using Proarch.Ems.Infrastructure.Data.Common;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Proarch.Ems.Infrastructure.Data.Configuration
 {
@@ -20,6 +17,10 @@ namespace Proarch.Ems.Infrastructure.Data.Configuration
            .WithMany(g => g.Projects)
            .HasForeignKey(s => s.ClientId)
             .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasOne<UserStoryModel>(s => s.UserStory)
+         .WithOne(ad => ad.Project)
+         .HasForeignKey<UserStoryModel>(ad => ad.ProjectId);
         }
     }
 }

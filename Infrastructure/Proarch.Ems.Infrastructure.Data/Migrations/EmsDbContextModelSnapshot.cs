@@ -158,6 +158,58 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                     b.ToTable("Projects");
                 });
 
+            modelBuilder.Entity("Proarch.Ems.Core.Domain.Models.UserStoryModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TIMESTAMP");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("longtext CHARACTER SET utf8");
+
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsClosed")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("IsRecurring")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<DateTime?>("LastModifiedAt")
+                        .HasColumnType("TIMESTAMP");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("longtext CHARACTER SET utf8");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext CHARACTER SET utf8");
+
+                    b.Property<int>("ProjectId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RecurringHours")
+                        .HasColumnName("DefaultHours")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId")
+                        .IsUnique();
+
+                    b.HasIndex("ProjectId")
+                        .IsUnique();
+
+                    b.ToTable("UserStories1");
+                });
+
             modelBuilder.Entity("Proarch.Ems.Core.Domain.Models.EmployeeProjectModel", b =>
                 {
                     b.HasOne("Proarch.Ems.Core.Domain.Models.EmployeeModel", "Employee")
@@ -178,6 +230,21 @@ namespace Proarch.Ems.Infrastructure.Data.Migrations
                     b.HasOne("Proarch.Ems.Core.Domain.Models.ClientModel", "Client")
                         .WithMany("Projects")
                         .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Proarch.Ems.Core.Domain.Models.UserStoryModel", b =>
+                {
+                    b.HasOne("Proarch.Ems.Core.Domain.Models.EmployeeModel", "Employee")
+                        .WithOne("UserStory")
+                        .HasForeignKey("Proarch.Ems.Core.Domain.Models.UserStoryModel", "EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Proarch.Ems.Core.Domain.Models.ProjectModel", "Project")
+                        .WithOne("UserStory")
+                        .HasForeignKey("Proarch.Ems.Core.Domain.Models.UserStoryModel", "ProjectId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

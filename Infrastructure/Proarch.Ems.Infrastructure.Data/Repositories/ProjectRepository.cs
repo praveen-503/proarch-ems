@@ -32,7 +32,7 @@ namespace Proarch.Ems.Infrastructure.Data.Repositories
 
         async Task<ProjectModel> IProjectRepository.GetProjectByIdAsync(int id)
         {
-            return  await _context.Projects.FindAsync(id);
+            return await _context.Projects.FindAsync(id);
         }
 
         async Task<List<ProjectModel>> IProjectRepository.GetProjectsAsync()

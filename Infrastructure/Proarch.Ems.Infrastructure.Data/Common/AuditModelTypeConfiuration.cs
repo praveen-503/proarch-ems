@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Proarch.Ems.Core.Domain.Common;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Proarch.Ems.Infrastructure.Data.Common
 {
@@ -18,7 +15,7 @@ namespace Proarch.Ems.Infrastructure.Data.Common
             builder.HasKey(x => x.Id);
             builder.Property(e => e.Id).ValueGeneratedOnAdd();
             builder.Property(p => p.CreatedBy);
-            builder.Property(p => p.CreatedAt).HasColumnType("TIMESTAMP"); 
+            builder.Property(p => p.CreatedAt).HasColumnType("TIMESTAMP");
             builder.Property(p => p.LastModifiedAt).HasColumnType("TIMESTAMP");
             builder.Property(p => p.LastModifiedBy);
             ConfigureEntity(builder);

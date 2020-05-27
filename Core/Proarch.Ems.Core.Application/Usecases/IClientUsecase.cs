@@ -24,28 +24,28 @@ namespace Proarch.Ems.Core.Application.Usecases
             _clientRepository = clientRepository;
         }
 
-        Task<int> IClientUsecase.AddClientAsync(ClientModel client)
+        async Task<int> IClientUsecase.AddClientAsync(ClientModel client)
         {
-            return _clientRepository.AddClientAsync(client);
+            return await _clientRepository.AddClientAsync(client);
         }
 
-        Task<List<ClientModel>> IClientUsecase.GetAllClientsAsync()
+        async Task<List<ClientModel>> IClientUsecase.GetAllClientsAsync()
         {
-            return _clientRepository.GetAllClientsAsync();
+            return await _clientRepository.GetAllClientsAsync();
         }
 
-        Task<ClientModel> IClientUsecase.GetClientByIdAsync(int id)
+        async Task<ClientModel> IClientUsecase.GetClientByIdAsync(int id)
         {
-            return _clientRepository.GetClientByIdAsync(id);
+            return await _clientRepository.GetClientByIdAsync(id);
         }
 
-        Task<ClientModel> IClientUsecase.UpdateClientAsync(ClientModel clientModel)
+        async Task<ClientModel> IClientUsecase.UpdateClientAsync(ClientModel clientModel)
         {
-            return _clientRepository.UpdateClientAsync(clientModel);
+            return await _clientRepository.UpdateClientAsync(clientModel);
         }
-        Task<int> IClientUsecase.DeleteClientsAsync(int id)
+        async Task<int> IClientUsecase.DeleteClientsAsync(int id)
         {
-            return _clientRepository.DeleteClientsAsync(id);
+            return await _clientRepository.DeleteClientsAsync(id);
         }
     }
 }

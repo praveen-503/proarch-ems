@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
 using Proarch.Ems.Core.Application.Usecases;
 using Proarch.Ems.Core.Domain.Models;
 using Proarch.Ems.Infrastructure.Data.Common;
+using System.Threading.Tasks;
 
 namespace Proarch.Ems.Presentation.API.Controllers.Employee
 {
@@ -18,7 +13,7 @@ namespace Proarch.Ems.Presentation.API.Controllers.Employee
         private readonly EmsDbContext _context;
         private readonly IEmployeeUsecase _employeeUsecase;
 
-        public EmployeeController(EmsDbContext context,IEmployeeUsecase employeeUsecase)
+        public EmployeeController(EmsDbContext context, IEmployeeUsecase employeeUsecase)
         {
             _context = context;
             _employeeUsecase = employeeUsecase;
@@ -29,7 +24,7 @@ namespace Proarch.Ems.Presentation.API.Controllers.Employee
         public async Task<ActionResult> GetEmployees()
         {
             var listEmployees = await _employeeUsecase.GetEmployees().ConfigureAwait(true);
-            if(listEmployees == null)
+            if (listEmployees == null)
             {
                 return NotFound();
             }
@@ -67,7 +62,7 @@ namespace Proarch.Ems.Presentation.API.Controllers.Employee
             }
             return NoContent();
 
-           
+
         }
 
         // POST: api/Employee
@@ -77,7 +72,7 @@ namespace Proarch.Ems.Presentation.API.Controllers.Employee
         public async Task<ActionResult<EmployeeModel>> PostEmployeeModel(EmployeeModel employeeModel)
         {
             var employeeId = await _employeeUsecase.CreateEmployeeAsync(employeeModel);
-            if(employeeId == 0)
+            if (employeeId == 0)
             {
                 return BadRequest("Employee alredy reisterd with this id or email");
             }
@@ -86,14 +81,14 @@ namespace Proarch.Ems.Presentation.API.Controllers.Employee
 
         // DELETE: api/Employee/5
         [HttpDelete("{id}")]
-        async public  Task<ActionResult> DeleteEmployeeModel(int id)
+        async public Task<ActionResult> DeleteEmployeeModel(int id)
         {
             var isDeleted = await _employeeUsecase.DeleteEmployeeAsync(id).ConfigureAwait(true);
             if (!isDeleted)
             {
                 return NotFound();
             }
-            return Ok(); 
+            return Ok();
         }
     }
 }

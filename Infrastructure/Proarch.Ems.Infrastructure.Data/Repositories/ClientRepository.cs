@@ -30,19 +30,19 @@ namespace Proarch.Ems.Infrastructure.Data.Repositories
         }
         async Task<int> IClientRepository.AddClientAsync(ClientModel client)
         {
-            var existClient = _context.Clients.SingleOrDefaultAsync(x => x.Id == client.Id);
-            if (existClient == null)
+            var existClient =await _context.Clients.SingleOrDefaultAsync(x => x.Id == client.Id);
+            if (existClient != null)
             {
                 return 0;
             }
             _context.Clients.Add(client);
-            await _context.SaveChangesAsync().ConfigureAwait(false);
+            await _context.SaveChangesAsync();
             return client.Id;
         }
         async Task<ClientModel> IClientRepository.UpdateClientAsync(ClientModel clientModel)
         {
             var client = await _context.Clients.SingleOrDefaultAsync(c => c.Id == clientModel.Id && c.IsDelete == false).ConfigureAwait(false);
-            if (client != null )
+            if (client != null)
             {
                 client.IsExisted = clientModel.IsExisted;
                 client.Name = clientModel.Name;

@@ -2,8 +2,6 @@
 using Proarch.Ems.Core.Application.Common;
 using Proarch.Ems.Core.Domain.Exceptions;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Proarch.Ems.Infrastructure.Data.Common

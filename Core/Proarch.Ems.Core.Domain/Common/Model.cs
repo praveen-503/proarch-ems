@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Proarch.Ems.Core.Domain.Common
+﻿namespace Proarch.Ems.Core.Domain.Common
 {
     public abstract class Model
     {
