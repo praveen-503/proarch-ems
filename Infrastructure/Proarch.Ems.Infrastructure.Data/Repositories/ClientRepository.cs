@@ -30,8 +30,8 @@ namespace Proarch.Ems.Infrastructure.Data.Repositories
         }
         async Task<int> IClientRepository.AddClientAsync(ClientModel client)
         {
-            var existClient = _context.Clients.SingleOrDefaultAsync(x => x.Id == client.Id || x.Name.ToLower() == client.Name.ToLower());
-            if (existClient != null)
+            var existClient = _context.Clients.SingleOrDefaultAsync(x => x.Id == client.Id);
+            if (existClient == null)
             {
                 return 0;
             }

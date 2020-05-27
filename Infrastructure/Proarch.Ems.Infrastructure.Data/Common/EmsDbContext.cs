@@ -21,10 +21,16 @@ namespace Proarch.Ems.Infrastructure.Data.Common
         }
 
         public DbSet<ClientModel> Clients { get; set; }
+        public DbSet<EmployeeModel> Employees { get; set; }
+        public DbSet<ProjectModel> Projects { get; set; }
+        public DbSet<EmployeeProjectModel> EmployeeProjects { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ClientModelConfiguration());
+            modelBuilder.ApplyConfiguration(new EmployeeModelConfiguration());
+            modelBuilder.ApplyConfiguration(new ProjectModelConfiuration());
+            modelBuilder.ApplyConfiguration(new EmployeeProjectConfiguration());
         }
 
         public override int SaveChanges()

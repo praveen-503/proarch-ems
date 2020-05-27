@@ -11,16 +11,3 @@ D:\ems-practice-project\backend\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastru
 D:\ems-practice-project\backend\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.pdb
 D:\ems-practice-project\backend\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.pdb
 D:\ems-practice-project\backend\Proarch.Ems\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.csproj.CopyComplete
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.deps.json
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.dll
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.pdb
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.dll
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.dll
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Application.pdb
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\bin\Debug\netcoreapp3.1\Proarch.Ems.Core.Domain.pdb
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.csprojAssemblyReference.cache
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.AssemblyInfoInputs.cache
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.AssemblyInfo.cs
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.csproj.CopyComplete
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.dll
-D:\ems-practice-project\backend\proarch-ems\Infrastructure\Proarch.Ems.Infrastructure\obj\Debug\netcoreapp3.1\Proarch.Ems.Infrastructure.pdb
