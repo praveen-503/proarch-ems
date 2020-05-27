@@ -23,7 +23,8 @@ namespace Proarch.Ems.Presentation.API.Extension
         {
             app.UseExceptionHandler(appError =>
             {
-                appError.Run(async context => {
+                appError.Run(async context =>
+                {
                     var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
 
                     if (contextFeature == null || contextFeature.Error == null)

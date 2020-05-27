@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Proarch.Ems.Core.Application.Repositories
 {
-    public interface IEmployeeRepository: IRepository
+    public interface IEmployeeRepository : IRepository
     {
         Task<List<EmployeeModel>> GetEmployees();
         Task<EmployeeModel> GetEmployeeById(int Id);

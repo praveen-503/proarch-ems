@@ -24,6 +24,7 @@ namespace Proarch.Ems.Infrastructure.Data.Common
         public DbSet<EmployeeModel> Employees { get; set; }
         public DbSet<ProjectModel> Projects { get; set; }
         public DbSet<EmployeeProjectModel> EmployeeProjects { get; set; }
+        public DbSet<UserStoryModel> UserStories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -31,6 +32,7 @@ namespace Proarch.Ems.Infrastructure.Data.Common
             modelBuilder.ApplyConfiguration(new EmployeeModelConfiguration());
             modelBuilder.ApplyConfiguration(new ProjectModelConfiuration());
             modelBuilder.ApplyConfiguration(new EmployeeProjectConfiguration());
+            modelBuilder.ApplyConfiguration(new UserStoryModelConfiguration());
         }
 
         public override int SaveChanges()

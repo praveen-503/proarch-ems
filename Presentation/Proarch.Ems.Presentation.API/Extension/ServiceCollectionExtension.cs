@@ -2,11 +2,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using Proarch.Ems.Core.Application.Services;
 using Proarch.Ems.Presentation.API.Services;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 
 namespace Proarch.Ems.Presentation.API.Extension
 {

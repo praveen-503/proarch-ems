@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Proarch.Ems.Core.Application.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Proarch.Ems.Presentation.API.Services
 {

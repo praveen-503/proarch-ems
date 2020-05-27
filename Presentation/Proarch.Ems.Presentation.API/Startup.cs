@@ -1,16 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Proarch.Ems.Infrastructure.Data.Common;
 using Proarch.Ems.Presentation.API.Extension;
 
@@ -35,7 +28,9 @@ namespace Proarch.Ems.Presentation.API
             {
                 options.UseMySql(Configuration.GetConnectionString("EmsDbContext"));
             });
-         
+            //services.AddDbContext<EmsDbContext>(ServiceLifetime.Transient);
+
+
 
             // services.AddAuthentication("BasicAuthentication")
             //    .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);

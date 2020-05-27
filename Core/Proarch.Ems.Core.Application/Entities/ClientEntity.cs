@@ -1,8 +1,5 @@
 ﻿using Proarch.Ems.Core.Application.Common;
 using Proarch.Ems.Core.Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Proarch.Ems.Core.Application.Entities
 {

@@ -1,7 +1,7 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Proarch.Ems.Core.Application.Usecases;
 using Proarch.Ems.Core.Domain.Models;
+using System.Threading.Tasks;
 
 namespace Proarch.Ems.Presentation.API.Controllers.Client
 {
@@ -48,8 +48,8 @@ namespace Proarch.Ems.Presentation.API.Controllers.Client
         [HttpPost]
         public async Task<ActionResult> PostClientAs(ClientModel clientModel)
         {
-            var clientId =await _clientUsecase.AddClientAsync(clientModel).ConfigureAwait(true);
-            if(clientId == 0)
+            var clientId = await _clientUsecase.AddClientAsync(clientModel).ConfigureAwait(true);
+            if (clientId == 0)
             {
                 return BadRequest("client is already existed with this Name or Id");
             }
@@ -66,7 +66,7 @@ namespace Proarch.Ems.Presentation.API.Controllers.Client
                 return BadRequest();
             }
             var client = await _clientUsecase.UpdateClientAsync(clientModel).ConfigureAwait(true);
-            if(client == null)
+            if (client == null)
             {
                 return NotFound();
             }
@@ -83,8 +83,8 @@ namespace Proarch.Ems.Presentation.API.Controllers.Client
             {
                 return NotFound();
             }
-           
-            return Ok("Client Deleted Successfully with client id:"+clientId);
+
+            return Ok("Client Deleted Successfully with client id:" + clientId);
         }
     }
 }

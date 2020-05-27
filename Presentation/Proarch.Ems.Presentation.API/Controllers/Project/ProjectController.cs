@@ -1,10 +1,10 @@
-﻿using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Proarch.Ems.Core.Application.Usecases;
 using Proarch.Ems.Core.Domain.Models;
 using Proarch.Ems.Infrastructure.Data.Common;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Proarch.Ems.Presentation.API.Controllers.Project
 {
@@ -15,7 +15,7 @@ namespace Proarch.Ems.Presentation.API.Controllers.Project
         private readonly EmsDbContext _context;
         private readonly IProjectUsecase _projectUsecase;
 
-        public ProjectController(EmsDbContext context,IProjectUsecase projectUsecase)
+        public ProjectController(EmsDbContext context, IProjectUsecase projectUsecase)
         {
             _context = context;
             _projectUsecase = projectUsecase;
@@ -26,7 +26,7 @@ namespace Proarch.Ems.Presentation.API.Controllers.Project
         public async Task<ActionResult> GetProjects()
         {
             var projects = await _projectUsecase.GetPoejctsAsync().ConfigureAwait(true);
-            if(projects == null)
+            if (projects == null)
             {
                 return NotFound();
             }
@@ -58,7 +58,7 @@ namespace Proarch.Ems.Presentation.API.Controllers.Project
                 return BadRequest();
             }
             var isProjectUpdated = await _projectUsecase.UpdateProjectAsync(projectModel).ConfigureAwait(true);
-            
+
             _context.Entry(projectModel).State = EntityState.Modified;
 
             try

@@ -18,6 +18,7 @@ namespace Proarch.Ems.Core.Domain.Models
         public string Salt { get; set; }
         public IList<EmployeeProjectModel> EmployeeProjects { get; set; }
 
+        public UserStoryModel UserStory { get; set; }
         public static string CreateSalt()
         {
             byte[] randomBytes = new byte[128 / 8];
