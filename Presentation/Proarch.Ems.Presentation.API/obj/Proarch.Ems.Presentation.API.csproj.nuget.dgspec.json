@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ems-practice-project\\backend\\proarch-ems\\Presentation\\Proarch.Ems.Presentation.API\\Proarch.Ems.Presentation.API.csproj": {}
+    "D:\\Projects\\proarch-ems\\Presentation\\Proarch.Ems.Presentation.API\\Proarch.Ems.Presentation.API.csproj": {}
   },
   "projects": {
-    "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
+    "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj",
+        "projectUniqueName": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj",
         "projectName": "Proarch.Ems.Core.Application",
-        "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj",
-        "packagesPath": "C:\\Users\\praveenb\\.nuget\\packages\\",
-        "outputPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\obj\\",
+        "projectPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj",
+        "packagesPath": "C:\\Users\\prave\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\praveenb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prave\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,9 +26,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
+              "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+                "projectPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
               }
             }
           }
@@ -44,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -59,24 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+    "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
         "projectName": "Proarch.Ems.Core.Domain",
-        "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
-        "packagesPath": "C:\\Users\\praveenb\\.nuget\\packages\\",
-        "outputPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\obj\\",
+        "projectPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\prave\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\praveenb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prave\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,6 +84,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -99,6 +96,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "FluentValidation": {
               "target": "Package",
@@ -128,24 +126,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj": {
+    "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj",
+        "projectUniqueName": "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj",
         "projectName": "Proarch.Ems.Infrastructure.Data",
-        "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj",
-        "packagesPath": "C:\\Users\\praveenb\\.nuget\\packages\\",
-        "outputPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\obj\\",
+        "projectPath": "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj",
+        "packagesPath": "C:\\Users\\prave\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\praveenb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prave\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -157,15 +152,16 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
+              "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
+                "projectPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
               },
-              "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
+              "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+                "projectPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
               },
-              "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj"
+              "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj": {
+                "projectPath": "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj"
               }
             }
           }
@@ -178,6 +174,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -209,24 +206,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj": {
+    "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj",
         "projectName": "Proarch.Ems.Infrastructure",
-        "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\praveenb\\.nuget\\packages\\",
-        "outputPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\obj\\",
+        "projectPath": "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\prave\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\praveenb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prave\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -238,12 +232,13 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
+              "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
+                "projectPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
               },
-              "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
+              "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+                "projectPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
               }
             }
           }
@@ -256,6 +251,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -271,24 +267,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\ems-practice-project\\backend\\proarch-ems\\Presentation\\Proarch.Ems.Presentation.API\\Proarch.Ems.Presentation.API.csproj": {
+    "D:\\Projects\\proarch-ems\\Presentation\\Proarch.Ems.Presentation.API\\Proarch.Ems.Presentation.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ems-practice-project\\backend\\proarch-ems\\Presentation\\Proarch.Ems.Presentation.API\\Proarch.Ems.Presentation.API.csproj",
+        "projectUniqueName": "D:\\Projects\\proarch-ems\\Presentation\\Proarch.Ems.Presentation.API\\Proarch.Ems.Presentation.API.csproj",
         "projectName": "Proarch.Ems.Presentation.API",
-        "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Presentation\\Proarch.Ems.Presentation.API\\Proarch.Ems.Presentation.API.csproj",
-        "packagesPath": "C:\\Users\\praveenb\\.nuget\\packages\\",
-        "outputPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Presentation\\Proarch.Ems.Presentation.API\\obj\\",
+        "projectPath": "D:\\Projects\\proarch-ems\\Presentation\\Proarch.Ems.Presentation.API\\Proarch.Ems.Presentation.API.csproj",
+        "packagesPath": "C:\\Users\\prave\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\proarch-ems\\Presentation\\Proarch.Ems.Presentation.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\praveenb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\prave\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -300,18 +293,19 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
+              "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj": {
+                "projectPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Application\\Proarch.Ems.Core.Application.csproj"
               },
-              "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
+              "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj": {
+                "projectPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj"
               },
-              "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj"
+              "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj": {
+                "projectPath": "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure.Data\\Proarch.Ems.Infrastructure.Data.csproj"
               },
-              "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj": {
-                "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj"
+              "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj": {
+                "projectPath": "D:\\Projects\\proarch-ems\\Infrastructure\\Proarch.Ems.Infrastructure\\Proarch.Ems.Infrastructure.csproj"
               }
             }
           }
@@ -324,6 +318,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -370,7 +365,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

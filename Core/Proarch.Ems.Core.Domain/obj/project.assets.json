@@ -469,23 +469,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\praveenb\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\prave\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
+      "projectUniqueName": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
       "projectName": "Proarch.Ems.Core.Domain",
-      "projectPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
-      "packagesPath": "C:\\Users\\praveenb\\.nuget\\packages\\",
-      "outputPath": "D:\\ems-practice-project\\backend\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\obj\\",
+      "projectPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\Proarch.Ems.Core.Domain.csproj",
+      "packagesPath": "C:\\Users\\prave\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\proarch-ems\\Core\\Proarch.Ems.Core.Domain\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\praveenb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\prave\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -497,6 +493,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -508,6 +505,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "FluentValidation": {
             "target": "Package",
@@ -537,7 +535,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
